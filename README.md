@@ -18,26 +18,26 @@ When users click on one of the billionaires on the list, they are directed to th
 
 ## Wireframes
 
-###Desktop View
+### Desktop View
 
 [About Page](https://wireframe.cc/FPSe3E)
 [Billionaires List](https://wireframe.cc/mMn5Jm)
 [Individual Person View ](https://wireframe.cc/puOuDv)
 
-###Tablet(iPad) View (Will look the same as the Desktop View)
+### Tablet(iPad) View (Will look the same as the Desktop View)
 
 [About Page](https://wireframe.cc/FPSe3E)
 [Billionaires List](https://wireframe.cc/mMn5Jm)
 [Individual Person View ](https://wireframe.cc/puOuDv)
 
-#Mobile(Samsung Galaxy S8 +) View
+### Mobile (Samsung Galaxy S8 +) View
 [About Page](https://wireframe.cc/BLJEUi)
 [Billionaires List](https://wireframe.cc/dpGVDM)
 [Individual Person View ](https://wireframe.cc/S4IpaG)
 
-### MVP/PostMVP
+## MVP/PostMVP
 
-#### MVP
+### MVP
 
 - Have a navigation bar with two links
 - Have 3 separate pages (About, List, and Individual person )
@@ -46,13 +46,13 @@ When users click on one of the billionaires on the list, they are directed to th
 - When one of the billionaires is clicked, the user will be directed to the individual person view page with additional information.
 - Responsive Design for Samsung Galaxy and Ipad
 
-#### PostMVP
+### PostMVP
 
 - Advanced CSS
 - Ask UI/UX Designers for advice and insight.
 - Add a search bar/button that allows users to type in billionaire's name and render only the information that the user typed in the search bar.
 
-#### MVP Component Hierarchy
+### MVP Component Hierarchy
 
 ```
 
