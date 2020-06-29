@@ -1,68 +1,123 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Overview
 
-## Available Scripts
+## Project Name
 
-In the project directory, you can run:
+"World's 100 Billionaires "
 
-### `npm start`
+## Project Description
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+"World's 100 Billionaires" begins with an about page that displays a description of the website and what the next pages will be about. On the top of the page, it contains links to "About" and "Billionaires List" pages. If users visit or click "Billionaires List" page, they will see a list of 100 world's billionaires' with their pictures, names, net worth, rank, and main sources of wealth in a descending order of rank (by their net worth).
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+When users click on one of the billionaires on the list, they are directed to that individual person view page that displays additional information; the page includes current residence(city, state), number of shares owned, share price, and some interesting facts.
 
-### `npm test`
+## API and Data Sample
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[World's Billionaires Data API](https://forbes400.herokuapp.com/)
 
-### `npm run build`
+![Data Response Screenshot](https://github.com/kangja/World-Billionaires/blob/master/Data%20Response.png).
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Wireframes
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Desktop View
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[About Page](https://wireframe.cc/FPSe3E)
 
-### `npm run eject`
+[Billionaires List](https://wireframe.cc/mMn5Jm)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[Individual Person View ](https://wireframe.cc/puOuDv)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Tablet(iPad) View (Will look the same as the Desktop View)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[About Page](https://wireframe.cc/FPSe3E)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[Billionaires List](https://wireframe.cc/mMn5Jm)
 
-## Learn More
+[Individual Person View ](https://wireframe.cc/puOuDv)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Mobile (Samsung Galaxy S8 +) View
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[About Page](https://wireframe.cc/BLJEUi)
 
-### Code Splitting
+[Billionaires List](https://wireframe.cc/dpGVDM)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+[Individual Person View ](https://wireframe.cc/S4IpaG)
 
-### Analyzing the Bundle Size
+## MVP/PostMVP
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### MVP
 
-### Making a Progressive Web App
+- Have a navigation bar with two links
+- Have 3 separate pages (About, Billionaires List, and Individual Person View)
+- On about page, write a description of the website and make sure to have a button that directs to the list page when clicked.
+- Render a list of world's billionaires on list page with pictures, rank, net worth, name, and main source of wealth.
+- When one of the billionaires is clicked, the user will be directed to the individual person view page with additional information.
+- Responsive design for Samsung Galaxy and iPad.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+### PostMVP
 
-### Advanced Configuration
+- Advanced CSS
+- Ask UI/UX Designers for advice and insight.
+- Add a search bar/button that allows users to type in billionaire's name and render only the information that the user typed in the search bar instead of rednering a list of 100 Billionaires.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+### MVP Component Hierarchy
 
-### Deployment
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+|__ components/
+      |__ App.js
+      |__ About.js
+      |__ Nav.js
+      |__ Footer.js
+      |__ ClickButton.js
+      |__ BillionairesList.js
+      |__ BillionaireDetail.js
 
-### `npm run build` fails to minify
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Project Schedule
+
+| Day     | Deliverable                                                                                            | Status     |
+| ------- | ------------------------------------------------------------------------------------------------------ | ---------- |
+| June 29 | Project Plan(Wireframes / Time Frames/ Approval) + Navigation Bar(Nav.js) + ClickButton.js + Footer.js | Incomplete |
+| June 30 | About Page + Billionaires List Page                                                                    | Incomplete |
+| July 1  | Individual Person Page + CSS + Reponsive Design                                                        | Incomplete |
+| June 2  | More CSS + Reponsive Design                                                                            | Incomplete |
+| June 3  | MVP                                                                                                    | Incomplete |
+| June 7  | Present                                                                                                | Incomplete |
+
+## Timeframes
+
+| Component              | Priority | Estimated Time | Time Invested | Actual Time |
+| ---------------------- | :------: | :------------: | :-----------: | :---------: |
+| Navigation Bar(Nav.js) |    H     |     1.5hrs     |      hrs      |     hrs     |
+| ClickButton.js         |    H     |      1hrs      |      hrs      |     hrs     |
+| Footer.js              |    H     |     1.5hrs     |      hrs      |     hrs     |
+| About page             |    H     |     3.5hrs     |      hrs      |     hrs     |
+| Billionaires List Page |    H     |      4hrs      |      hrs      |     hrs     |
+| Individual Person Page |    H     |      4hrs      |      hrs      |     hrs     |
+| CSS                    |    H     |      5hrs      |      hrs      |     hrs     |
+| Reponsive Design       |    H     |      6hrs      |      hrs      |     hrs     |
+| More CSS               |    M     |      5hrs      |      hrs      |     hrs     |
+| Total                  |    H     |      hrs       |      hrs      |     hrs     |
+
+## SWOT Analysis
+
+Strength: Organizing the components.
+
+Weaknesses: I'm not familiar with doing the responsive design. Still need to understand props better.
+
+Opportunities: This project will allow me to grow my skill at responsive design than before. After the project, my understandstanding in React will increase.
+
+Threats: I'm worried that responsive design will take me a long time because I'm not familiar with it.
+
+## Code Snippet
+
+Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+
+```
+
+```
+
+## Change Log
+
+Use this section to document what changes were made and the reasoning behind those changes.
