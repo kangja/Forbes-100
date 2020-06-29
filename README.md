@@ -2,9 +2,13 @@
 
 ## Project Name
 
-"Forbes 100 List"
+"World's 100 Billionaires "
 
 ## Project Description
+
+"World's 100 Billionaires" begins with a About page that displays a description of the website. On the top of the page, it contains links to "About" and "Billionaires List" pages. If users visit or click "Billionaires List" page, they will see a list of 100 world's billionaires' with their pictures, names, net worth, rank and main sources of wealth in a descending order of rank (by their net worth).
+
+When users click on one of the billionaires on the list, they are directed to that individual person view that display additional information; they include current residence(city, state), number of shares owned, share price, and some interesting facts.
 
 ## API and Data Sample
 
@@ -25,12 +29,12 @@
 
 | Day     | Deliverable                                                                               | Status     |
 | ------- | ----------------------------------------------------------------------------------------- | ---------- |
-| June 29 | Project Plan(Wireframes / priority Matric / Time Frames)                                  | Complete   |
-| June 30 | Core Application Structure (HTML and Javascript(Rendering GIFs and players' data on page) | Complete   |
-| July 1  | CSS / Remove Buttons / Search Bar                                                         | Complete   |
-| June 2  | More CSS                                                                                  | Complete   |
-| June 3  | MVP                                                                                       | Complete   |
-| June 4  | Present                                                                                   | Incomplete |
+| June 29 | Project Plan(Wireframes / Time Frames)                                                    | Incomplete |
+| June 30 | Core Application Structure (HTML and Javascript(Rendering GIFs and players' data on page) | Incomplete |
+| July 1  | CSS / Remove Buttons / Search Bar                                                         | Incomplete |
+| June 2  | More CSS                                                                                  | Incomplete |
+| June 3  | MVP                                                                                       | Incomplete |
+| June 7  | Present                                                                                   | Incomplete |
 
 ## Timeframes
 
