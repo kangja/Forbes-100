@@ -12,6 +12,8 @@ When users click on one of the billionaires on the list, they are directed to th
 
 ## API and Data Sample
 
+[World's Billionaires Data API](https://forbes400.herokuapp.com/)
+
 ```
 
 
