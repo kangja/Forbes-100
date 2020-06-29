@@ -1,10 +1,12 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
 import AboutNav from "./AboutNav";
-import BillionairesListNav from "./BillionairesListNav";
+import ListNav from "./ListNav";
 import List from "./List";
 import About from "./About";
-// import Detail from "./Detail";
+import Footer from "./Footer";
+import ClickButton from "./ClickButton";
+import Detail from "./Detail";
 
 export default function App() {
   return (
@@ -15,7 +17,7 @@ export default function App() {
         </Link>
 
         <Link to="/billionaires-list">
-          <BillionairesListNav />
+          <ListNav />
         </Link>
       </nav>
 
@@ -27,6 +29,16 @@ export default function App() {
         <Route path="/billionaires-list">
           <List />
         </Route>
+
+        <Route path="/billionaire-list/:name">
+          <Detail />
+        </Route>
+
+        <Route path="/" exact>
+          <ClickButton />
+        </Route>
+
+        <Footer />
       </main>
     </>
   );

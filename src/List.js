@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function List() {
   let [people, updatePeople] = useState([]);
@@ -21,14 +21,30 @@ export default function List() {
 
   return (
     <div>
-      <h1>hi</h1>
+      <h1>List</h1>
       {people.map((person) => (
-        <>
-          <h2 key={person.personName}>{person.personName}</h2>
-          <div>
-            <img src={person.thumbnail} alt={person.personName} />
+        <div className="container">
+          <div className="image">
+            <img
+              src={`https://${person.squareImage}  alt=${person.personName}`}
+            />
           </div>
-        </>
+          <>
+            <h1 key={person.rank}>Rank: {person.rank}</h1>
+            <h2 key={person.personName}>Name: {person.personName}</h2>
+            <h2 key={person.finalWorth}>
+              Net Worth: ({person.finalWorth}/1000) B
+            </h2>
+            <h2 key={person.countryOfCitizenship}>
+              Country: {person.countryOfCitizenship}
+            </h2>
+            <h2 key={person.source}>Source of wealth: {person.source}</h2>
+            <h2 key={person.industries[0]}>Industry: {person.industries[0]}</h2>
+            <Link to={`/billionaire-list/${person.personName}`}>
+              <button>Read More</button>
+            </Link>
+          </>
+        </div>
       ))}
     </div>
   );
