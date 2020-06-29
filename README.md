@@ -14,7 +14,7 @@ When users click on one of the billionaires on the list, they are directed to th
 
 [World's Billionaires Data API](https://forbes400.herokuapp.com/)
 
-![Data Response Screenshot](https://github.com/kangja/World-Billionaires/blob/master/Data%20Response.png).
+![Data Response Screenshot](https://github.com/kangja/World-Billionaires/blob/master/Data-Response.png).
 
 ## Wireframes
 
