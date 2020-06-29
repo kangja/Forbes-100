@@ -6,9 +6,9 @@
 
 ## Project Description
 
-"World's 100 Billionaires" begins with a About page that displays a description of the website. On the top of the page, it contains links to "About" and "Billionaires List" pages. If users visit or click "Billionaires List" page, they will see a list of 100 world's billionaires' with their pictures, names, net worth, rank and main sources of wealth in a descending order of rank (by their net worth).
+"World's 100 Billionaires" begins with an about page that displays a description of the website. On the top of the page, it contains links to "About" and "Billionaires List" pages. If users visit or click "Billionaires List" page, they will see a list of 100 world's billionaires' with their pictures, names, net worth, rank, and main sources of wealth in a descending order of rank (by their net worth).
 
-When users click on one of the billionaires on the list, they are directed to that individual person view that display additional information; they include current residence(city, state), number of shares owned, share price, and some interesting facts.
+When users click on one of the billionaires on the list, they are directed to that individual person view page that displays additional information; the page include current residence(city, state), number of shares owned, share price, and some interesting facts.
 
 ## API and Data Sample
 
@@ -18,11 +18,22 @@ When users click on one of the billionaires on the list, they are directed to th
 
 ## Wireframes
 
+###Desktop View
+
 [About Page](https://wireframe.cc/FPSe3E)
-
 [Billionaires List](https://wireframe.cc/mMn5Jm)
-
 [Individual Person View ](https://wireframe.cc/puOuDv)
+
+###Tablet(iPad) View (Will look the same as the Desktop View)
+
+[About Page](https://wireframe.cc/FPSe3E)
+[Billionaires List](https://wireframe.cc/mMn5Jm)
+[Individual Person View ](https://wireframe.cc/puOuDv)
+
+#Mobile(Samsung Galaxy S8 +) View
+[About Page](https://wireframe.cc/BLJEUi)
+[Billionaires List](https://wireframe.cc/dpGVDM)
+[Individual Person View ](https://wireframe.cc/S4IpaG)
 
 ### MVP/PostMVP
 
@@ -33,6 +44,7 @@ When users click on one of the billionaires on the list, they are directed to th
 - On About page, write a description of the website and make sure to have a button that will render to the list page when clicked.
 - Render a list of world's billionaires on list page with pictures, rank, net worth, name, and source of wealth.
 - When one of the billionaires is clicked, the user will be directed to the individual person view page with additional information.
+- Responsive Design for Samsung Galaxy and Ipad
 
 #### PostMVP
 
@@ -56,27 +68,27 @@ When users click on one of the billionaires on the list, they are directed to th
 
 ## Project Schedule
 
-| Day     | Deliverable                                          | Status     |
-| ------- | ---------------------------------------------------- | ---------- |
-| June 29 | Project Plan(Wireframes / Time Frames/) + About Page | Incomplete |
-| June 30 | Billionaires List Page + Individual Person Page      | Incomplete |
-| July 1  | Footer + CSS + Reponsive Design                      | Incomplete |
-| June 2  | More CSS + Reponsive Design                          | Incomplete |
-| June 3  | MVP                                                  | Incomplete |
-| June 7  | Present                                              | Incomplete |
+| Day     | Deliverable                                                   | Status     |
+| ------- | ------------------------------------------------------------- | ---------- |
+| June 29 | Project Plan(Wireframes / Time Frames/ Approval) + About Page | Incomplete |
+| June 30 | Billionaires List Page + Individual Person Page               | Incomplete |
+| July 1  | Footer + CSS + Reponsive Design                               | Incomplete |
+| June 2  | More CSS + Reponsive Design                                   | Incomplete |
+| June 3  | MVP                                                           | Incomplete |
+| June 7  | Present                                                       | Incomplete |
 
 ## Timeframes
 
 | Component              | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------- | :------: | :------------: | :-----------: | :---------: |
 | About Page             |    H     |      4hrs      |      hrs      |     hrs     |
-| Billionaires List Page |    H     |      4hrs      |     2hrs      |     hrs     |
-| Individual Person Page |    H     |      4hrs      |     4hrs      |     hrs     |
-| Footer page            |    H     |      1hrs      |     6hrs      |     hrs     |
-| Button                 |    H     |      1hrs      |     5hrs      |     hrs     |
-| CSS                    |    H     |      5hrs      |     4hrs      |     hrs     |
-| Reponsive Design       |    H     |      4hrs      |     9hrs      |     hrs     |
-| More CSS               |    M     |      5hrs      |     10hrs     |     hrs     |
+| Billionaires List Page |    H     |      4hrs      |      hrs      |     hrs     |
+| Individual Person Page |    H     |      4hrs      |      hrs      |     hrs     |
+| Footer page            |    H     |      1hrs      |      hrs      |     hrs     |
+| Button                 |    H     |      1hrs      |      hrs      |     hrs     |
+| CSS                    |    H     |      5hrs      |      hrs      |     hrs     |
+| Reponsive Design       |    H     |      6hrs      |      hrs      |     hrs     |
+| More CSS               |    M     |      5hrs      |      hrs      |     hrs     |
 | Total                  |    H     |      hrs       |      hrs      |     hrs     |
 
 ## Code Snippet
