@@ -21,18 +21,25 @@ When users click on one of the billionaires on the list, they are directed to th
 ### Desktop View
 
 [About Page](https://wireframe.cc/FPSe3E)
+
 [Billionaires List](https://wireframe.cc/mMn5Jm)
+
 [Individual Person View ](https://wireframe.cc/puOuDv)
 
 ### Tablet(iPad) View (Will look the same as the Desktop View)
 
 [About Page](https://wireframe.cc/FPSe3E)
+
 [Billionaires List](https://wireframe.cc/mMn5Jm)
+
 [Individual Person View ](https://wireframe.cc/puOuDv)
 
 ### Mobile (Samsung Galaxy S8 +) View
+
 [About Page](https://wireframe.cc/BLJEUi)
+
 [Billionaires List](https://wireframe.cc/dpGVDM)
+
 [Individual Person View ](https://wireframe.cc/S4IpaG)
 
 ## MVP/PostMVP
