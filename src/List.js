@@ -11,6 +11,7 @@ export default function List() {
         "https://forbes400.herokuapp.com/api/forbes400?limit=100"
       );
       console.log(data);
+      console.log(data.data.source);
 
       updatePeople(data.data);
 
@@ -24,8 +25,9 @@ export default function List() {
   }, []);
 
   return (
-    <div>
-      <h1>List</h1>
+    <div className="important">
+      <h1 className="list">List</h1>
+      
       {people.map((person) => (
         <div key={person.personName} className="biggest-container">
           <div key={person.personName}>
@@ -39,8 +41,8 @@ export default function List() {
               alt={person.personName}
             />
           </div>
-          <>
-            <h2 key={person.rank}>Rank: {person.rank}</h2>
+          <div className="info">
+            <h2 key={person.rank}>Rank: #{person.rank}</h2>
             <h2 key={person.personName}>Name: {person.personName}</h2>
             <h2 key={person.finalWorth}>
               Net Worth:{" "}
@@ -49,12 +51,17 @@ export default function List() {
             <h2 key={person.countryOfCitizenship}>
               Country: {person.countryOfCitizenship}
             </h2>
-            <h2 key={person.source}>Source of Wealth: {person.source}</h2>
+
+            <h2 key={person.source}>Source of Wealth: {person.source} </h2>
+            {/* <h2 key={person.source}>
+              Source of Wealth:{" "}
+              {`${String(person.source).chatAt(0).toUpperCase()}`}
+            </h2> */}
             <h2 key={person.industries[0]}>Industry: {person.industries[0]}</h2>
             <Link to={`/billionaire-list/${person.personName}`}>
               <button>Read More</button>
             </Link>
-          </>
+          </div>
         </div>
       ))}
     </div>

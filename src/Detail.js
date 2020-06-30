@@ -37,7 +37,7 @@ export default function Detail() {
                 />
               </div>
               <div className="information">
-                <h2>Rank: {data.rank}</h2>
+                <h2>Rank: #{data.rank}</h2>
                 <h2>Name: {data.personName}</h2>
                 <h2>
                   Net Worth:{" "}
@@ -65,7 +65,17 @@ export default function Detail() {
                 </h2>
               )}
             </>
-            <h2>Additional Information: {data.abouts}</h2>
+
+            <>
+              {data.abouts ? (
+                <>
+                  <h2>Additional Information: {data.abouts}</h2>
+                </>
+              ) : (
+                <h2>Additional Information: The data is not available.</h2>
+              )}
+            </>
+
             <h2>Interesting Facts: {data.bios} </h2>
           </div>
         ))}

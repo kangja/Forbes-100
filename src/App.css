@@ -1,14 +1,34 @@
-/* List.js */
-/* .biggest-container {
+/* LIST.JS */
+
+.biggest-container {
+  margin: 0 auto;
+  width: 400px;
   display: flex;
-} */
+  flex-direction: column;
+}
 
 .image {
   width: 200px;
   border-radius: 25% 10%;
 }
 
-/* Detail.js */
+/* DETAIL.JS */
 .detail-information {
   display: flex;
+}
+
+/* APP.JS */
+
+.nav-combined {
+  display: flex;
+}
+
+.important {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.list {
+  width: 100%;
 }

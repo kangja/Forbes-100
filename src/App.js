@@ -12,7 +12,7 @@ import "./App.css";
 export default function App() {
   return (
     <>
-      <nav>
+      <nav className="nav-combined">
         <Link to="/">
           <AboutNav />
         </Link>
