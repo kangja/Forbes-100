@@ -66,11 +66,12 @@ When users click on one of the billionaires on the list, they are directed to th
 |__ components/
       |__ App.js
       |__ About.js
-      |__ Nav.js
+      |__ AboutNav.js
+      |__ ListNav.js
       |__ Footer.js
       |__ ClickButton.js
-      |__ BillionairesList.js
-      |__ BillionaireDetail.js
+      |__ List.js
+      |__ Detail.js
 
 ```
 
@@ -78,7 +79,7 @@ When users click on one of the billionaires on the list, they are directed to th
 
 | Day     | Deliverable                                                                                            | Status     |
 | ------- | ------------------------------------------------------------------------------------------------------ | ---------- |
-| June 29 | Project Plan(Wireframes / Time Frames/ Approval) + Navigation Bar(Nav.js) + ClickButton.js + Footer.js | Incomplete |
+| June 29 | Project Plan(Wireframes / Time Frames/ Approval) + Navigation Bar(Nav.js) + ClickButton.js + Footer.js | Complete   |
 | June 30 | About Page + Billionaires List Page                                                                    | Incomplete |
 | July 1  | Individual Person Page + CSS + Reponsive Design                                                        | Incomplete |
 | June 2  | More CSS + Reponsive Design                                                                            | Incomplete |
@@ -93,9 +94,9 @@ When users click on one of the billionaires on the list, they are directed to th
 | ClickButton.js         |    H     |      1hrs      |    1.5hrs     |     hrs     |
 | Footer.js              |    H     |     1.5hrs     |     1hrs      |     hrs     |
 | About page             |    H     |     3.5hrs     |      hrs      |     hrs     |
-| Billionaires List Page |    H     |      4hrs      |     5hrs      |     hrs     |
-| Individual Person Page |    H     |      4hrs      |     2hrs      |     hrs     |
-| CSS                    |    H     |      5hrs      |      hrs      |     hrs     |
+| Billionaires List Page |    H     |      4hrs      |     8hrs      |     hrs     |
+| Individual Person Page |    H     |      4hrs      |     3hrs      |     hrs     |
+| CSS                    |    H     |      5hrs      |     2hrs      |     hrs     |
 | Reponsive Design       |    H     |      6hrs      |      hrs      |     hrs     |
 | More CSS               |    M     |      5hrs      |      hrs      |     hrs     |
 | Total                  |    H     |      hrs       |      hrs      |     hrs     |

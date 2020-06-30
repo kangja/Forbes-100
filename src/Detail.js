@@ -17,6 +17,7 @@ export default function Detail() {
 
       // console.log(data2);
       updatePerson(data2.data);
+      console.log(data2.data);
     };
     callApi2();
   }, []);
@@ -31,7 +32,7 @@ export default function Detail() {
               <div className="detail-container">
                 <img
                   key={data.thumbnail}
-                  src={`https:${data.person.squareImage}`}
+                  src={`https://${data.person.squareImage}`}
                   alt={data.personName}
                 />
               </div>
@@ -44,14 +45,27 @@ export default function Detail() {
                     Math.round(Number(data.finalWorth / 1000) * 100) / 100
                   } B`}
                 </h2>
-                <h2>Source of wealth: {data.source}</h2>
+                <h2>Source of Wealth: {data.source}</h2>
+                <h2>Industry: {data.industries}</h2>
               </div>
             </div>
 
-            <h2>
-              Residence: {data.city}, {data.state}, {data.countryOfCitizenship}
-            </h2>
-            <h2>Share Price: ${data.financialAssets[0].sharePrice} </h2>
+            <>
+              {/* Check to see if data.state exists within data first */}
+              {data.state ? (
+                <>
+                  <h2>
+                    Residence: {data.city}, {data.state},{" "}
+                    {data.countryOfCitizenship}
+                  </h2>
+                </>
+              ) : (
+                <h2>
+                  Residence: {data.city}, {data.countryOfCitizenship}
+                </h2>
+              )}
+            </>
+            <h2>Additional Information: {data.abouts}</h2>
             <h2>Interesting Facts: {data.bios} </h2>
           </div>
         ))}

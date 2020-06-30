@@ -33,9 +33,9 @@ export default function List() {
               className="image"
               key={person.thumbnail}
               // make sure to disable adblock to display images
-              // src={`https:${person.person.squareImage}`}
+              src={`https://${person.person.squareImage}`}
               // src={person.thumbnail}
-              src={person.squareImage}
+              // src={person.squareImage}
               alt={person.personName}
             />
           </div>
