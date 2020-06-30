@@ -6,7 +6,7 @@ export default function Detail() {
   let [person, updatePerson] = useState([]);
 
   const params = useParams();
-  console.log(params);
+  // console.log(params);
 
   useEffect(() => {
     const callApi2 = async () => {
@@ -14,7 +14,7 @@ export default function Detail() {
         "https://forbes400.herokuapp.com/api/forbes400?limit=100"
       );
 
-      console.log(data2);
+      // console.log(data2);
       updatePerson(data2.data);
     };
     callApi2();
@@ -25,8 +25,14 @@ export default function Detail() {
       {person
         .filter((individual) => individual.personName === params.name)
         .map((data) => (
-          <div>
-            <h1>{data.personName}</h1>
+          <div key={data.personName}>
+            <img
+              key={data.thumbnail}
+              src={data.thumbnail}
+              alt={data.personName}
+            />
+            <h2>{data.rank}</h2>
+            <h2>{data.personName}</h2>
           </div>
         ))}
     </div>

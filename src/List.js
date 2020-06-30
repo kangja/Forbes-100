@@ -23,10 +23,12 @@ export default function List() {
     <div>
       <h1>List</h1>
       {people.map((person) => (
-        <div className="container">
-          <div className="image">
+        <div key={person.personName} className="container">
+          <div key={person.personName} className="image">
             <img
-              src={`https://${person.squareImage}  alt=${person.personName}`}
+              key={person.thumbnail}
+              src={person.thumbnail}
+              alt={person.personName}
             />
           </div>
           <>
