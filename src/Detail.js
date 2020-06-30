@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Axios from "axios";
+import "./App.css";
 
 export default function Detail() {
   let [person, updatePerson] = useState([]);
@@ -26,13 +27,32 @@ export default function Detail() {
         .filter((individual) => individual.personName === params.name)
         .map((data) => (
           <div key={data.personName}>
-            <img
-              key={data.thumbnail}
-              src={data.thumbnail}
-              alt={data.personName}
-            />
-            <h2>{data.rank}</h2>
-            <h2>{data.personName}</h2>
+            <div className="detail-information">
+              <div className="detail-container">
+                <img
+                  key={data.thumbnail}
+                  src={`https:${data.person.squareImage}`}
+                  alt={data.personName}
+                />
+              </div>
+              <div className="information">
+                <h2>Rank: {data.rank}</h2>
+                <h2>Name: {data.personName}</h2>
+                <h2>
+                  Net Worth:{" "}
+                  {`${
+                    Math.round(Number(data.finalWorth / 1000) * 100) / 100
+                  } B`}
+                </h2>
+                <h2>Source of wealth: {data.source}</h2>
+              </div>
+            </div>
+
+            <h2>
+              Residence: {data.city}, {data.state}, {data.countryOfCitizenship}
+            </h2>
+            <h2>Share Price: ${data.financialAssets[0].sharePrice} </h2>
+            <h2>Interesting Facts: {data.bios} </h2>
           </div>
         ))}
     </div>

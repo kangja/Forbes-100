@@ -7,6 +7,7 @@ import About from "./About";
 import Footer from "./Footer";
 import ClickButton from "./ClickButton";
 import Detail from "./Detail";
+import "./App.css";
 
 export default function App() {
   return (
