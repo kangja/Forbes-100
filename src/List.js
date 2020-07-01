@@ -27,10 +27,10 @@ export default function List() {
   return (
     <div className="important">
       <h1 className="list">List</h1>
-      
+
       {people.map((person) => (
-        <div key={person.personName} className="biggest-container">
-          <div key={person.personName}>
+        <div key={person.personName} className="big-container">
+          <div className="image-container" key={person.personName}>
             <img
               className="image"
               key={person.thumbnail}
@@ -41,12 +41,13 @@ export default function List() {
               alt={person.personName}
             />
           </div>
+
           <div className="info">
             <h2 key={person.rank}>Rank: #{person.rank}</h2>
             <h2 key={person.personName}>Name: {person.personName}</h2>
             <h2 key={person.finalWorth}>
-              Net Worth:{" "}
-              {`${Math.round(Number(person.finalWorth / 1000) * 100) / 100} B`}
+              Net Worth: $
+              {`${Math.round(Number(person.finalWorth / 1000) * 100) / 100}B`}
             </h2>
             <h2 key={person.countryOfCitizenship}>
               Country: {person.countryOfCitizenship}
@@ -59,7 +60,9 @@ export default function List() {
             </h2> */}
             <h2 key={person.industries[0]}>Industry: {person.industries[0]}</h2>
             <Link to={`/billionaire-list/${person.personName}`}>
-              <button>Read More</button>
+              <div className="button-container">
+                <button>Read More</button>
+              </div>
             </Link>
           </div>
         </div>

@@ -23,61 +23,86 @@ export default function Detail() {
   }, []);
 
   return (
-    <div>
+    <div className="detail-big-container">
       {person
         .filter((individual) => individual.personName === params.name)
         .map((data) => (
-          <div key={data.personName}>
+          <>
             <div className="detail-information">
               <div className="detail-container">
                 <img
-                  key={data.thumbnail}
+                  className="image-detail"
+                  key={data.personName}
                   src={`https://${data.person.squareImage}`}
                   alt={data.personName}
                 />
               </div>
+
               <div className="information">
-                <h2>Rank: #{data.rank}</h2>
+                <div>
+                  <span>Rank:</span> <span>#{data.rank}</span>
+                </div>
                 <h2>Name: {data.personName}</h2>
                 <h2>
-                  Net Worth:{" "}
-                  {`${
-                    Math.round(Number(data.finalWorth / 1000) * 100) / 100
-                  } B`}
+                  Net Worth: $
+                  {`${Math.round(Number(data.finalWorth / 1000) * 100) / 100}B`}
                 </h2>
                 <h2>Source of Wealth: {data.source}</h2>
                 <h2>Industry: {data.industries}</h2>
               </div>
             </div>
 
-            <>
-              {/* Check to see if data.state exists within data first */}
-              {data.state ? (
+            <div className="all-h2">
+              <div className="first-h2">
                 <>
-                  <h2>
-                    Residence: {data.city}, {data.state},{" "}
-                    {data.countryOfCitizenship}
-                  </h2>
+                  {/* Check to see if data.state exists within data first */}
+                  {data.state ? (
+                    <>
+                      <div className="residence">
+                        <h2>Residence:</h2>
+                        <li>
+                          {" "}
+                          {data.city}, {data.state}, {data.countryOfCitizenship}
+                        </li>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="no-state-residence">
+                      <h2>Residence:</h2>
+                      <p>
+                        {data.city}, {data.countryOfCitizenship}
+                      </p>
+                    </div>
+                  )}
                 </>
-              ) : (
-                <h2>
-                  Residence: {data.city}, {data.countryOfCitizenship}
-                </h2>
-              )}
-            </>
+              </div>
 
-            <>
-              {data.abouts ? (
+              <div className="second-h2">
                 <>
-                  <h2>Additional Information: {data.abouts}</h2>
+                  {data.abouts ? (
+                    <>
+                      <div className="abouts">
+                        <h2>Additional Information:</h2>
+                        <li>{data.abouts}</li>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="no-data">
+                      Additional Information: <p>The data is not available.</p>
+                    </div>
+                  )}
                 </>
-              ) : (
-                <h2>Additional Information: The data is not available.</h2>
-              )}
-            </>
-
-            <h2>Interesting Facts: {data.bios} </h2>
-          </div>
+                <div className="interesting">
+                  <h2>Interesting Facts:</h2>{" "}
+                  <>
+                    <ul>
+                      <li>{data.bios}</li>
+                    </ul>
+                  </>
+                </div>
+              </div>
+            </div>
+          </>
         ))}
     </div>
   );

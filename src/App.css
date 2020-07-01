@@ -1,34 +1,104 @@
-/* LIST.JS */
-
-.biggest-container {
-  margin: 0 auto;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
+html {
+  height: 100%;
 }
 
-.image {
-  width: 200px;
-  border-radius: 25% 10%;
-}
-
-/* DETAIL.JS */
-.detail-information {
-  display: flex;
-}
-
-/* APP.JS */
+/* APP.JS *******************************************/
 
 .nav-combined {
   display: flex;
 }
 
+.detail-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/* LIST.JS *******************************************
+
+/* including the h1 to the end of html except footer */
 .important {
   display: flex;
   flex-wrap: wrap;
 }
 
-
+/* just h1 tag */
 .list {
   width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* image to rest of the information */
+.big-container {
+  display: flex;
+  flex-direction: column;
+  border: 7px inset lightskyblue;
+  margin: auto;
+  margin-bottom: 2%;
+  width: 350px;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.image-container {
+  justify-content: center;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.image {
+  width: 200px;
+  border-radius: 25% 10%;
+  /* margin-top: 15%; */
+}
+
+/* DETAIL.JS ***************************************/
+
+.detail-big-continaer {
+  display: flex;
+}
+
+.detail-information {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.all-h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+/* .information {
+  display: flex;
+  flex-direction: column;
+  border: 7px inset lightskyblue;
+  width: 415px;
+  height: 415px;
+  align-items: center;
+  justify-content: center;
+}
+
+.h2-detail {
+  border: 7px inset lightskyblue;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+} */
+
+.interesting {
+  display: inline-block;
+}
+
+.abouts {
+  display: inline;
 }
