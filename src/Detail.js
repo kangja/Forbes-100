@@ -39,8 +39,8 @@ export default function Detail() {
               </div>
 
               <div className="information">
-                <div>
-                  <span>Rank:</span> <span>#{data.rank}</span>
+                <div className="rank">
+                  <h2>Rank:</h2> <h3>#{data.rank}</h3>
                 </div>
                 <h2>Name: {data.personName}</h2>
                 <h2>
@@ -52,18 +52,21 @@ export default function Detail() {
               </div>
             </div>
 
-            <div className="all-h2">
+            <div className="extra-info-container">
               <div className="first-h2">
                 <>
                   {/* Check to see if data.state exists within data first */}
                   {data.state ? (
                     <>
                       <div className="residence">
-                        <h2>Residence:</h2>
-                        <li>
-                          {" "}
-                          {data.city}, {data.state}, {data.countryOfCitizenship}
-                        </li>
+                        <h2 className="h2-residence">Residence:</h2>
+                        <ul>
+                          <li className="li">
+                            {" "}
+                            {data.city}, {data.state},{" "}
+                            {data.countryOfCitizenship}
+                          </li>
+                        </ul>
                       </div>
                     </>
                   ) : (
@@ -83,7 +86,13 @@ export default function Detail() {
                     <>
                       <div className="abouts">
                         <h2>Additional Information:</h2>
-                        <li>{data.abouts}</li>
+                        <>
+                          <ul>
+                            {data.abouts.map((about) => (
+                              <li>{about}</li>
+                            ))}
+                          </ul>
+                        </>
                       </div>
                     </>
                   ) : (
@@ -96,7 +105,9 @@ export default function Detail() {
                   <h2>Interesting Facts:</h2>{" "}
                   <>
                     <ul>
-                      <li>{data.bios}</li>
+                      {data.bios.map((bio) => (
+                        <li>{bio}</li>
+                      ))}
                     </ul>
                   </>
                 </div>

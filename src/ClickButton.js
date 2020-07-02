@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function ClickButton() {
   return (
-    <div>
+    <div className="button">
       <Link to="/billionaires-list">
         <button>click</button>
       </Link>

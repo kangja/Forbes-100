@@ -26,7 +26,7 @@ export default function List() {
 
   return (
     <div className="important">
-      <h1 className="list">List</h1>
+      <h1 className="list">World's 100 Billionaires</h1>
 
       {people.map((person) => (
         <div key={person.personName} className="big-container">

@@ -1,41 +1,69 @@
 body {
   margin: 0;
+  height: 100%;
+  position: relative;
+  min-height: 100vh;
 }
 
-/* APP.JS *******************************************/
+/* APP.JS *****************************/
 .nav-combined {
   display: flex;
   background-color: navy;
 }
 
+/* link tags */
 a {
   text-decoration: none;
   padding: 8px 12px;
   color: skyblue;
 }
+/* ********************************** */
 
+/* Detail.js ***************************/
 .detail-container {
   display: flex;
   align-content: center;
   justify-content: center;
 }
 
-/*  ListNav.JS************************* */
-.bill-list {
-  text-decoration: none;
+/* *********************************** */
+
+/* About.Js ********************************************/
+.about {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
-/* LIST.JS *******************************************
+/* Button  */
+.button {
+  text-align: center;
+}
+/* ***************************************
+
+
+/* Footer.js************************** */
+.footer {
+  /* position: relative; */
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: navy;
+  color: white;
+}
+
+/* **************************************** */
 
 /* including the h1 to the end of html except footer */
+
 .important {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* just h1 tag */
 .list {
   width: 100%;
+  text-align: center;
 }
 
 h2 {
@@ -46,15 +74,17 @@ h2 {
 .big-container {
   display: flex;
   flex-direction: column;
-  border: 7px inset lightskyblue;
+  border: 7px outset lightskyblue;
   margin: auto;
+  border-radius: 25% 10%;
   margin-bottom: 2%;
   width: 350px;
-  height: 600px;
+  height: 650px;
   align-items: center;
   justify-content: center;
   padding-right: 3%;
   padding-left: 3%;
+  background-color: rgb(156, 174, 223);
 }
 
 .image-container {
@@ -67,8 +97,9 @@ h2 {
 
 .image {
   width: 200px;
+  border: 6px outset rgb(142, 93, 206);
   border-radius: 25% 10%;
-  /* margin-top: 15%; */
+  box-shadow: 10px 13px 25px rgb(98, 61, 167);
 }
 
 /* DETAIL.JS ***************************************/
@@ -81,22 +112,32 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin: 20px;
 }
 
-.all-h2 {
+.extra-info-container {
   display: flex;
   flex-direction: column;
-  border: 7px inset lightskyblue;
+  border: 7px outset lightskyblue;
+  align-items: center;
+  margin: 20px 30px 20px 30px;
+  justify-content: center;
+  border-radius: 25% 10%;
+  background-color: rgb(156, 174, 223);
 }
 
 .information {
   display: flex;
   flex-direction: column;
-  border: 7px inset lightskyblue;
+  border: 7px outset lightskyblue;
   width: 415px;
   height: 415px;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  border-radius: 25% 10%;
+  background-color: rgb(156, 174, 223);
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(100, 31, 128), 0 0 0.2em blue;
+  color: white;
 }
 
 .interesting {
@@ -105,4 +146,34 @@ h2 {
 
 .abouts {
   display: inline;
+}
+
+.residence {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.h2-residence {
+  width: 100px;
+  margin: 10px;
+}
+
+.rank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+}
+
+.info h2 {
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+  color: white;
+  font: 1.5em Georgia, serif;
+}
+
+.image-detail {
+  border-radius: 25% 10%;
+  border: 6px outset rgb(142, 93, 206);
+  box-shadow: 10px 13px 25px rgb(98, 61, 167);
 }

@@ -90,13 +90,13 @@ When users click on one of the billionaires on the list, they are directed to th
 
 | Component              | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------- | :------: | :------------: | :-----------: | :---------: |
-| Navigation Bar(Nav.js) |    H     |     1.5hrs     |     2hrs      |     hrs     |
+| Navigation Bar(Nav.js) |    H     |     1.5hrs     |    2.5hrs     |     hrs     |
 | ClickButton.js         |    H     |      1hrs      |    1.5hrs     |     hrs     |
 | Footer.js              |    H     |     1.5hrs     |     1hrs      |     hrs     |
-| About page             |    H     |     3.5hrs     |      hrs      |     hrs     |
+| About page             |    H     |     3.5hrs     |     1hrs      |     hrs     |
 | Billionaires List Page |    H     |      4hrs      |     8hrs      |     hrs     |
-| Individual Person Page |    H     |      4hrs      |     3hrs      |     hrs     |
-| CSS                    |    H     |      5hrs      |     2hrs      |     hrs     |
+| Individual Person Page |    H     |      4hrs      |     7hrs      |     hrs     |
+| CSS                    |    H     |      5hrs      |     3hrs      |     hrs     |
 | Reponsive Design       |    H     |      6hrs      |      hrs      |     hrs     |
 | More CSS               |    M     |      5hrs      |      hrs      |     hrs     |
 | Total                  |    H     |      hrs       |      hrs      |     hrs     |
