@@ -40,7 +40,7 @@ export default function Detail() {
 
               <div className="information">
                 <div className="rank">
-                  <h2>Rank:</h2> <h3>#{data.rank}</h3>
+                  <h2>Rank: #{data.rank}</h2>
                 </div>
                 <h2>Name: {data.personName}</h2>
                 <h2>
@@ -60,6 +60,7 @@ export default function Detail() {
                     <>
                       <div className="residence">
                         <h2 className="h2-residence">Residence:</h2>
+
                         <ul>
                           <li className="li">
                             {" "}
@@ -72,9 +73,12 @@ export default function Detail() {
                   ) : (
                     <div className="no-state-residence">
                       <h2>Residence:</h2>
-                      <p>
-                        {data.city}, {data.countryOfCitizenship}
-                      </p>
+
+                      <ul>
+                        <li className="li">
+                          {data.city}, {data.countryOfCitizenship}
+                        </li>
+                      </ul>
                     </div>
                   )}
                 </>

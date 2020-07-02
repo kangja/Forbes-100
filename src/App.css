@@ -1,14 +1,30 @@
 body {
   margin: 0;
-  height: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+/* .name {
+  padding: 8px 12px;
+} */
+
+.title {
+  color: skyblue;
+}
+
+.logo {
+  font-size: 24px;
 }
 
 /* APP.JS *****************************/
 .nav-combined {
   display: flex;
-  background-color: navy;
+  background-color: rgb(0, 56, 121);
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 12px;
 }
 
 /* link tags */
@@ -33,6 +49,8 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: #e4dede;
+  height: 100vh;
 }
 
 /* Button  */
@@ -44,12 +62,13 @@ a {
 
 /* Footer.js************************** */
 .footer {
-  /* position: relative; */
+  position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: navy;
+  background-color: rgb(0, 56, 121);
   color: white;
+  padding: 8px 12px;
 }
 
 /* **************************************** */
@@ -59,11 +78,15 @@ a {
 .important {
   display: flex;
   flex-wrap: wrap;
+  background-color: #e4dede;
+  padding-bottom: 100px;
 }
 
 .list {
   width: 100%;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 h2 {
@@ -104,8 +127,14 @@ h2 {
 
 /* DETAIL.JS ***************************************/
 
-.detail-big-continaer {
+.detail-big-container {
   display: flex;
+  flex-direction: column;
+  background-color: #e4dede;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 85px;
 }
 
 .detail-information {
@@ -124,6 +153,8 @@ h2 {
   justify-content: center;
   border-radius: 25% 10%;
   background-color: rgb(156, 174, 223);
+  height: 55%;
+  width: 75%;
 }
 
 .information {
@@ -133,11 +164,13 @@ h2 {
   width: 415px;
   height: 415px;
   justify-content: center;
-  align-items: center;
   border-radius: 25% 10%;
   background-color: rgb(156, 174, 223);
   text-shadow: 1px 1px 2px black, 0 0 1em rgb(100, 31, 128), 0 0 0.2em blue;
   color: white;
+  margin-left: 125px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .interesting {
@@ -153,6 +186,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 23px;
 }
 .h2-residence {
   width: 100px;
@@ -176,4 +210,17 @@ h2 {
   border-radius: 25% 10%;
   border: 6px outset rgb(142, 93, 206);
   box-shadow: 10px 13px 25px rgb(98, 61, 167);
+  margin-right: 125px;
+}
+
+.second-h2 {
+  font-size: 23px;
+}
+
+.li {
+  font-size: 23px;
+}
+
+.no-state-residence {
+  font-size: 23px;
 }
