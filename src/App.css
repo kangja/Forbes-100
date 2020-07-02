@@ -6,10 +6,6 @@ body {
   min-height: 100vh;
 }
 
-/* .name {
-  padding: 8px 12px;
-} */
-
 .title {
   color: skyblue;
 }
@@ -47,10 +43,16 @@ a {
 /* About.Js ********************************************/
 .about {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  text-align: center;
-  background-color: #e4dede;
-  height: 100vh;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  height: 88vh;
+  width: 60vw;
+  border: 7px outset lightskyblue;
+  border-radius: 25% 10%;
+  background-color: rgb(156, 174, 223);
 }
 
 /* Button  */
@@ -65,7 +67,7 @@ a {
   position: absolute;
   bottom: 0;
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   background-color: rgb(0, 56, 121);
   color: white;
   padding: 8px 12px;
@@ -173,10 +175,6 @@ h2 {
   padding-right: 20px;
 }
 
-.interesting {
-  display: inline-block;
-}
-
 .abouts {
   display: inline;
 }
@@ -228,4 +226,19 @@ h2 {
 .paragraphs {
   padding-left: 250px;
   padding-right: 250px;
+  font-size: 25px;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.biggest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-bottom: 83.167px;
+  background-color: #e4dede;
 }
