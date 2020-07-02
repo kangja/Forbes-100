@@ -224,3 +224,8 @@ h2 {
 .no-state-residence {
   font-size: 23px;
 }
+
+.paragraphs {
+  padding-left: 250px;
+  padding-right: 250px;
+}
