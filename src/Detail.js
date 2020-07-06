@@ -53,67 +53,72 @@ export default function Detail() {
             </div>
 
             <div className="extra-info-container">
-              <div className="first-h2">
-                <>
-                  {/* Check to see if data.state exists within data first */}
-                  {data.state ? (
-                    <>
-                      <div className="residence">
-                        <h2 className="h2-residence">Residence:</h2>
+              <div className="within-container">
+                <div className="first-h2">
+                  <>
+                    {/* Check to see if data.state exists within data first */}
+                    {data.state ? (
+                      <>
+                        <div className="residence">
+                          <h2 className="h2-residence">Residence:</h2>
+
+                          <ul>
+                            <li className="li">
+                              {" "}
+                              {data.city}, {data.state},{" "}
+                              {data.countryOfCitizenship}
+                            </li>
+                          </ul>
+                        </div>
+                      </>
+                    ) : (
+                      <div className="no-state-residence">
+                        <h2>Residence:</h2>
 
                         <ul>
                           <li className="li">
-                            {" "}
-                            {data.city}, {data.state},{" "}
-                            {data.countryOfCitizenship}
+                            {data.city}, {data.countryOfCitizenship}
                           </li>
                         </ul>
                       </div>
-                    </>
-                  ) : (
-                    <div className="no-state-residence">
-                      <h2>Residence:</h2>
-
-                      <ul>
-                        <li className="li">
-                          {data.city}, {data.countryOfCitizenship}
-                        </li>
-                      </ul>
-                    </div>
-                  )}
-                </>
-              </div>
-
-              <div className="second-h2">
-                <>
-                  {data.abouts ? (
-                    <>
-                      <div className="abouts">
-                        <h2>Additional Information:</h2>
-                        <>
-                          <ul>
-                            {data.abouts.map((about) => (
-                              <li>{about}</li>
-                            ))}
-                          </ul>
-                        </>
-                      </div>
-                    </>
-                  ) : (
-                    <div className="no-data">
-                      Additional Information: <p>The data is not available.</p>
-                    </div>
-                  )}
-                </>
-                <div className="interesting">
-                  <h2>Interesting Facts:</h2>{" "}
-                  <>
-                    <ul>
-                      {data.bios.map((bio) => (
-                        <li>{bio}</li>
-                      ))}
-                    </ul>
+                    )}
                   </>
+                </div>
+
+                <div className="second-h2">
+                  <>
+                    {data.abouts ? (
+                      <>
+                        <div className="abouts">
+                          <h2 className="additional">
+                            Additional Information:
+                          </h2>
+                          <>
+                            <ul>
+                              {data.abouts.map((about) => (
+                                <li className="more">{about}</li>
+                              ))}
+                            </ul>
+                          </>
+                        </div>
+                      </>
+                    ) : (
+                      <div className="no-data">
+                        <h2>Additional Information:</h2>
+                        <p>The data is not available.</p>
+                      </div>
+                    )}
+                  </>
+                  <div className="interesting">
+                    <h2 class="interesting-facts">Interesting Facts:</h2>{" "}
+                    <>
+                      <ul>
+                        {data.bios.map((bio) => (
+                          <li className="bio">{bio}</li>
+                        ))}
+                      </ul>
+                    </>
+                  </div>
                 </div>
               </div>
             </div>
