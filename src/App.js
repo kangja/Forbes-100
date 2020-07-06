@@ -1,12 +1,11 @@
 import React from "react";
 import { Link, Route } from "react-router-dom";
-import Logo from "./Logo";
+import Title from "./Title";
 import AboutNav from "./AboutNav";
 import ListNav from "./ListNav";
 import List from "./List";
 import About from "./About";
 import Footer from "./Footer";
-// import ClickButton from "./ClickButton";
 import Detail from "./Detail";
 import "./App.css";
 
@@ -14,7 +13,7 @@ export default function App() {
   return (
     <>
       <nav className="nav-combined">
-        <Logo />
+        <Title />
 
         <Link to="/">
           <AboutNav />
@@ -37,10 +36,6 @@ export default function App() {
         <Route path="/billionaire-list/:name">
           <Detail />
         </Route>
-
-        {/* <Route path="/" exact>
-          <ClickButton />
-        </Route> */}
 
         <Footer />
       </main>

@@ -14,10 +14,10 @@ export default function Detail() {
       const data2 = await Axios(
         "https://forbes400.herokuapp.com/api/forbes400?limit=100"
       );
-
       // console.log(data2);
+
       updatePerson(data2.data);
-      console.log(data2.data);
+      // console.log(data2.data);
     };
     callApi2();
   }, []);

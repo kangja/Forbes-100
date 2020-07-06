@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Logo extends Component {
+export default class Title extends Component {
   render() {
     return (
       <div>

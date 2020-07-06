@@ -1,36 +1,28 @@
 body {
   margin: 0;
-  /* display: flex; */
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
 }
 
 .title {
-  color: skyblue;
+  color: #efeef2;
 }
 
-/* APP.JS *****************************/
 .nav-combined {
   display: flex;
-  background-color: rgb(0, 56, 121);
+  background-color: #5953b3;
   justify-content: space-around;
   align-items: center;
-  /* width: 100vw; */
-
-  /* padding: 8px 12px; */
   padding: 0.5rem 0.75rem;
 }
 
 /* link tags */
 a {
   text-decoration: none;
-
-  /* padding: 8px 12px; */
   padding: 0.5rem 0.75rem;
-  color: skyblue;
+  color: #efeef2;
 }
-/* ********************************** */
 
 /* Detail.js ***************************/
 .detail-container {
@@ -38,8 +30,6 @@ a {
   align-content: center;
   justify-content: center;
 }
-
-/* *********************************** */
 
 /* About.Js ********************************************/
 .about {
@@ -61,8 +51,6 @@ a {
 .paragraphs {
   margin-left: 10%;
   margin-right: 10%;
-
-  /* font-size: 25px; */
   font-size: 1.5625rem;
 }
 
@@ -74,27 +62,18 @@ a {
 
 /* Footer.js************************** */
 .footer {
-  /* position: absolute; */
   bottom: 0;
   width: 100%;
-  /* width: 100vw; */
-
-  /* text-align: center; */
-  background-color: rgb(0, 56, 121);
-  color: white;
-  /* padding: 8px 12px; */
+  background-color: #5953b3;
+  color: #efeef2;
   padding: 0.5rem 0.75rem;
 }
-
-/* **************************************** */
-
-/* including the h1 to the end of html except footer */
 
 .important {
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background-color: #e4dede;
+  background-color: #c0bac2;
 }
 
 .list {
@@ -102,44 +81,29 @@ a {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+  color: #4e3a90;
 }
 
 h2 {
   text-align: center;
 }
 
-/* image to rest of the information */
 .big-container {
   display: flex;
   flex-direction: column;
-  /* border: 7px outset lightskyblue; */
   border: 0.4375rem outset lightskyblue;
-
-  /* margin: auto; */
   margin-right: 0.5%;
   margin-left: 0.5%;
   border-radius: 25% 10%;
   margin-bottom: 2%;
-  /* width: 350px; */
-  /* width: 21.875rem; */
   width: 19%;
   padding-top: 2%;
-  /* padding-bottom: 2%; */
   padding-right: 2%;
   padding-left: 2%;
-
-  /* width: 15%; */
-
-  /* height: 650px; */
-  /* height: 40.625rem; */
-
-  /* align-items: center; */
-  /* justify-content: center; */
   background-color: rgb(156, 174, 223);
 }
 
 .image-container {
-  /* justify-content: center; */
   text-align: center;
 }
 
@@ -148,27 +112,15 @@ h2 {
 }
 
 .image {
-  /* width: 200px; */
-  /* width: 12.5rem; */
   width: 60%;
-
-  /* border: 6px outset rgb(142, 93, 206); */
   border: 0.375rem outset rgb(142, 93, 206);
-
   border-radius: 25% 10%;
-
-  /* box-shadow: 10px 13px 25px rgb(98, 61, 167); */
   box-shadow: 0.625rem 0.8125rem 1.5625rem rgb(98, 61, 167);
 }
 
-/* DETAIL.JS ***************************************/
-
 .detail-information {
   display: flex;
-  /* justify-content: space-evenly; */
   align-items: center;
-  /* margin: 20px; */
-  /* margin: 1.25rem; */
   margin: 1%;
 }
 
@@ -176,7 +128,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: #e4dede;
+  background-color: #c0bac2;
   min-height: 100vh;
   justify-content: center;
   align-items: center;
@@ -185,13 +137,9 @@ h2 {
 .extra-info-container {
   display: flex;
   flex-direction: column;
-  /* border: 7px outset lightskyblue; */
   border: 0.4375rem outset lightskyblue;
-
   align-items: center;
-  /* margin: 20px 30px 20px 30px; */
   margin: 1.25rem 1.875rem 1.25rem 1.875rem;
-
   justify-content: center;
   border-radius: 25% 10%;
   background-color: rgb(156, 174, 223);
@@ -202,30 +150,17 @@ h2 {
 .information {
   display: flex;
   flex-direction: column;
-  /* border: 7px outset lightskyblue; */
   border: 0.4375rem outset lightskyblue;
-
-  /* width: 415px; */
   width: 25.9375rem;
-
-  /* height: 415px; */
   height: 25.9375rem;
-
   justify-content: center;
   border-radius: 25% 10%;
   background-color: rgb(156, 174, 223);
-  /* text-shadow: 1px 1px 2px black, 0 0 1em rgb(100, 31, 128), 0 0 0.2em blue; */
   text-shadow: 0.0625rem 0.0625rem 0.125rem black, 0 0 1em rgb(100, 31, 128),
     0 0 0.2em blue;
-
   color: white;
-  /* margin-left: 125px; */
   margin-left: 7.8125rem;
-
-  /* padding-left: 20px; */
   padding-left: 1.25rem;
-
-  /* padding-right: 20px; */
   padding-right: 1.25rem;
 }
 
@@ -244,14 +179,10 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* font-size: 23px; */
   font-size: 1.4375rem;
 }
 .h2-residence {
-  /* width: 100px; */
   width: 6.25rem;
-
-  /* margin: 10px; */
   margin: 0.625rem;
 }
 
@@ -263,27 +194,19 @@ h2 {
 }
 
 .info h2 {
-  /* text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue; */
   text-shadow: 0.0625rem 0.0625rem 0.125rem black, 0 0 1em blue, 0 0 0.2em blue;
-
   color: white;
   font: 1.5em Georgia, serif;
 }
 
 .image-detail {
   border-radius: 25% 10%;
-  /* border: 6px outset rgb(142, 93, 206); */
   border: 0.625rem outset rgb(142, 93, 206);
-
-  /* box-shadow: 10px 13px 25px rgb(98, 61, 167); */
   box-shadow: 0.625rem 0.8125rem 1.5625rem rgb(98, 61, 167);
-
-  /* margin-right: 125px; */
   margin-right: 7.8125rem;
 }
 
 .second-h2 {
-  /* font-size: 23px; */
   font-size: 1.4375rem;
 }
 
@@ -314,13 +237,10 @@ h2 {
 .biggest {
   display: flex;
   justify-content: center;
-  background-color: #e4dede;
+  background-color: #c0bac2;
 }
 
-/* ipad pro */
-/* width: 1024
-height: 1366 */
-
+/* Ipad Pro */
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .big-container {
     width: 42%;
@@ -350,6 +270,7 @@ height: 1366 */
   }
 }
 
+/* Galaxy s8+ */
 @media only screen and (min-device-width: 400px) and (max-device-height: 700px) and (orientation: portrait) {
   .welcome {
     font-size: 20px;

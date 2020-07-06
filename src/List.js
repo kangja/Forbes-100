@@ -10,8 +10,8 @@ export default function List() {
       const data = await axios(
         "https://forbes400.herokuapp.com/api/forbes400?limit=100"
       );
-      console.log(data);
-      console.log(data.data.source);
+      // console.log(data);
+      // console.log(data.data.source);
 
       updatePeople(data.data);
 
