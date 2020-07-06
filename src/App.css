@@ -79,8 +79,10 @@ a {
 .list {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  /* margin-top: 50px; */
+  margin-top: 3.125rem;
+  /* margin-bottom: 50px; */
+  margin-bottom: 3.125rem;
   color: #4e3a90;
 }
 
@@ -264,16 +266,16 @@ h2 {
   .footer {
     bottom: 0;
     width: 97.8%;
-    background-color: rgb(0, 56, 121);
-    color: white;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+    padding-bottom: 1.25rem;
   }
 }
 
 /* Galaxy s8+ */
 @media only screen and (min-device-width: 400px) and (max-device-height: 700px) and (orientation: portrait) {
   .welcome {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.25rem;
   }
 
   .about {
@@ -281,7 +283,8 @@ h2 {
     border-radius: 15% 10%;
   }
   .paragraphs {
-    font-size: 17px;
+    /* font-size: 17px; */
+    font-size: 1.0625rem;
   }
 
   .extra-info-container {
@@ -289,7 +292,8 @@ h2 {
   }
 
   .li {
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1rem;
   }
 
   .list {
@@ -328,23 +332,28 @@ h2 {
   }
 
   .h2-residence {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.25rem;
   }
 
   .additional {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.25rem;
   }
 
   .more {
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1rem;
   }
 
   .interesting-facts {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.25rem;
   }
 
   .bio {
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1rem;
   }
 
   .footer {
