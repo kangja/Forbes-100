@@ -10,14 +10,10 @@ export default function List() {
       const data = await axios(
         "https://forbes400.herokuapp.com/api/forbes400?limit=100"
       );
-      // console.log(data);
-      // console.log(data.data.source);
 
       updatePeople(data.data);
 
       // Since data.data.finalWorth is undefined I had to use Number() to convert it to a number in order to do a calculation.
-      // console.log(typeof data.data.finalWorth);
-      // console.log(typeof Number(data.data.finalWorth));
     };
 
     // must call this function to access data and to see the console.log(data).
@@ -36,8 +32,6 @@ export default function List() {
               key={person.thumbnail}
               // make sure to disable adblock to display images
               src={`https://${person.person.squareImage}`}
-              // src={person.thumbnail}
-              // src={person.squareImage}
               alt={person.personName}
             />
           </div>
@@ -54,10 +48,6 @@ export default function List() {
             </h2>
 
             <h2 key={person.source}>Source of Wealth: {person.source} </h2>
-            {/* <h2 key={person.source}>
-              Source of Wealth:{" "}
-              {`${String(person.source).chatAt(0).toUpperCase()}`}
-            </h2> */}
             <h2 key={person.industries[0]}>Industry: {person.industries[0]}</h2>
             <Link to={`/billionaire-list/${person.personName}`}>
               <div className="button-container">
